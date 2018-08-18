@@ -8,7 +8,6 @@ public class EventEmitter<L,T>
     {
         handlers = new Dictionary<L, List<Action<T>>>();
     }
-    // Use this for initialization
     public void On(L ev, Action<T> callback)
     {
         if (!handlers.ContainsKey(ev))
